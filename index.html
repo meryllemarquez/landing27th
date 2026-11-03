@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Studio Landing Page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800;6..12,900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+@keyframes wiggle{0%{transform:translateY(0) rotate(-11deg)}25%{transform:translateY(-8px) rotate(-9.8deg)}50%{transform:translateY(-12px) rotate(-11deg)}75%{transform:translateY(-6px) rotate(-12.2deg)}100%{transform:translateY(0) rotate(-11deg)}}
+.wiggle{animation:wiggle 5s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.wiggle{animation:none}}
+.card{position:absolute;background:#F6F6F6;border:1px solid #DADADA;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.08);padding:16px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;gap:10px;color:#666666;font-size:15px;transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .5s ease}
+.card .frame{flex:1 1 auto;min-height:0;border-radius:4px;overflow:hidden;background:#E6E6E6}
+.card .frame img,.card .frame video{display:block;width:100%;height:100%;object-fit:cover}
+.card .frame video{background:#000000}
+</style>
+</head>
+<body>
+<div style="font-family: 'Nunito Sans', sans-serif; color: #111111; background: #FFFFFF; overflow-x: hidden">
+
+<!-- HEADER -->
+<header style="border-bottom: 1px solid #E6E6E6">
+<nav style="max-width: 1320px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="font-weight: 900; font-size: 22px; text-decoration: none">[STUDIO NAME]</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; font-size: 16px; font-weight: 600">
+<a href="#work" style="text-decoration: none">Work</a>
+<a href="#team" style="text-decoration: none">Team</a>
+<a href="#pricing" style="text-decoration: none">Pricing</a>
+<a href="#book" style="background: #111111; color: #FFFFFF; font-weight: 800; padding: 12px 22px; border-radius: 10px; text-decoration: none">Book a free call</a>
+</div>
+</nav>
+</header>
+
+<!-- 1. CALLING THEM OUT -->
+<section id="top" style="max-width: 1320px; margin: 0 auto; padding: 96px 24px; min-height: 640px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 48px">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px">
+<h1 style="margin: 0; font-weight: 900; font-size: clamp(36px, 4.4vw, 60px); line-height: 1.12">Posting every day but still no one's messaging you?</h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.5; color: #444444; max-width: 520px">We shoot and edit reels for local brands so people stop scrolling and start asking for prices.</p>
+<a href="#book" style="margin-top: 12px; background: #111111; color: #FFFFFF; font-weight: 800; font-size: 18px; padding: 18px 36px; border-radius: 10px; text-decoration: none">Get my free game plan</a>
+</div>
+<div id="heroStack" style="flex: 0 1 480px; min-width: 0; position: relative; height: 500px"></div>
+</section>
+
+<!-- 2. PORTFOLIO -->
+<section id="work" style="max-width: 1320px; margin: 0 auto; padding: 96px 24px; min-height: 640px; display: flex; flex-wrap: wrap-reverse; align-items: center; justify-content: space-between; gap: 48px">
+<div id="videoStack" style="flex: 0 1 480px; min-width: 0; position: relative; height: 520px"></div>
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px">
+<h2 style="margin: 0; font-weight: 900; font-size: clamp(32px, 3.8vw, 52px); line-height: 1.15">What if your next reel was the one that filled your calendar?</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.5; color: #444444; max-width: 520px">“[Short client quote about what changed after posting.]” — [Name], [Business]</p>
+<a href="#book" style="margin-top: 12px; background: #111111; color: #FFFFFF; font-weight: 800; font-size: 18px; padding: 18px 36px; border-radius: 10px; text-decoration: none">I want results like this</a>
+</div>
+</section>
+
+<!-- 3. ONE VIDEO PROOF -->
+<section style="max-width: 1320px; margin: 0 auto; padding: 96px 24px; min-height: 640px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 48px">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px">
+<h2 style="margin: 0; font-weight: 900; font-size: clamp(32px, 3.8vw, 52px); line-height: 1.15">One video. Small page. Here's what it did.</h2>
+<p style="margin: 0; font-size: 20px; font-weight: 800">[XXK views] · [XXX inquiries] · [₱X ad spend]</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.5; color: #444444; max-width: 520px">“[Chelay's testimonial in her own words.]” — Chelay, [Business]</p>
+<a href="#book" style="margin-top: 12px; background: #111111; color: #FFFFFF; font-weight: 800; font-size: 18px; padding: 18px 36px; border-radius: 10px; text-decoration: none">Plan my first video</a>
+</div>
+<div style="flex: 0 1 480px; min-width: 0; display: flex; justify-content: center; padding: 40px 0">
+<div class="wiggle" style="width: 360px; max-width: 100%; aspect-ratio: 4 / 5.2; background: #EFEFEF; border: 1px solid #DADADA; border-radius: 6px; box-shadow: 0 10px 24px rgba(0,0,0,0.1); padding: 18px; box-sizing: border-box; color: #666666; font-size: 16px">
+<video id="featuredVideo" controls playsinline preload="metadata" style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 4px; background: #000000"></video>
+</div>
+</div>
+</section>
+
+<!-- 4. TEAM -->
+<section id="team" style="max-width: 1320px; margin: 0 auto; padding: 96px 24px; min-height: 640px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 48px">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px">
+<h2 style="margin: 0; font-weight: 900; font-size: clamp(32px, 3.8vw, 52px); line-height: 1.15">Who you're actually working with</h2>
+<div style="display: flex; flex-direction: column; gap: 4px; margin-top: 12px">
+<p id="memberName" style="margin: 0; font-weight: 900; font-size: 34px"></p>
+<p id="memberRole" style="margin: 0; font-weight: 800; font-size: 22px; color: #444444"></p>
+</div>
+<p id="memberDesc" style="margin: 0; font-size: 19px; line-height: 1.5; color: #444444; max-width: 480px"></p>
+</div>
+<div style="flex: 0 1 480px; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 24px">
+<div id="teamStack" style="position: relative; width: 420px; max-width: 100%; height: 440px"></div>
+<a href="#book" style="background: #111111; color: #FFFFFF; font-weight: 800; font-size: 17px; padding: 16px 32px; border-radius: 10px; text-decoration: none">Talk to us for free</a>
+</div>
+</section>
+
+<!-- 5. PROCESS -->
+<section style="max-width: 1320px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; align-items: center; gap: 64px">
+<h2 style="margin: 0; font-weight: 900; font-size: clamp(32px, 3.8vw, 52px); line-height: 1.15; text-align: center">What it's like working with us</h2>
+<ol id="steps" style="margin: 0; padding: 0; list-style: none; width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px"></ol>
+</section>
+
+<!-- 6. PRICING -->
+<section id="pricing" style="max-width: 1320px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; align-items: center; gap: 56px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center">
+<h2 style="margin: 0; font-weight: 900; font-size: clamp(32px, 3.8vw, 52px); line-height: 1.15">Pick where you want to start.</h2>
+<p style="margin: 0; font-size: 18px; color: #444444">Simple packages, no surprise fees.</p>
+</div>
+<div id="tiers" style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 48px"></div>
+</section>
+
+<!-- 7. FINAL CTA + MEME -->
+<section id="book" style="max-width: 1320px; margin: 0 auto; padding: 96px 24px 120px; min-height: 640px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 48px">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px">
+<h2 style="margin: 0; font-weight: 900; font-size: clamp(30px, 3.4vw, 46px); line-height: 1.2">Still not sure what to post next?</h2>
+<p style="margin: 0; font-size: 20px; line-height: 1.5; color: #333333; max-width: 540px">Give us 15 minutes. We'll look at your page and hand you a content game plan: what to post, what to stop posting, and the first video we'd make.</p>
+<p style="margin: 0; font-size: 20px; font-weight: 800">Use it with us or on your own. It's yours either way.</p>
+<a href="#book" style="margin-top: 12px; background: #111111; color: #FFFFFF; font-weight: 800; font-size: 18px; padding: 18px 36px; border-radius: 10px; text-decoration: none">Get my free game plan</a>
+</div>
+<div style="flex: 0 1 480px; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 28px; padding: 40px 0">
+<div class="wiggle" style="width: 360px; max-width: 100%; aspect-ratio: 4 / 5.2; background: #EFEFEF; border: 1px solid #DADADA; border-radius: 6px; box-shadow: 0 10px 24px rgba(0,0,0,0.1); padding: 18px; box-sizing: border-box; color: #666666; font-size: 16px">
+<img id="memeImg" alt="Relatable business-owner meme" loading="lazy" style="display: block; width: 100%; height: 100%; object-fit: contain; border-radius: 4px">
+</div>
+<p style="margin: 0; font-size: 16px; color: #555555; font-style: italic; text-align: center; max-width: 340px">[Side note, e.g. “If this is you, the call's free. We've all been there.”]</p>
+</div>
+</section>
+
+</div>
+
+<script>
+(function () {
+  var m = function (p) { return encodeURI(p); };
+
+  /* ---------- DATA ---------- */
+  var P = './media/Picture niyo/';
+  var B = './media/posting everyday (BTS pictures)/';
+  var R = './media/what if your next reel/';
+
+  var team = [
+    { name: '[Full name]', role: '[Founder / Creative Director]', desc: '[Description and experience: years in the field, brands shot for, what they’re best at.]', label: '[Name: person 1]', src: m(P + 'Boss.jpg'), alt: 'Team member 1' },
+    { name: '[Full name]', role: '[Videographer]', desc: '[Description and experience.]', label: '[Name: person 2]', src: m(P + 'cj.JPG'), alt: 'Team member 2' },
+    { name: '[Full name]', role: '[Editor]', desc: '[Description and experience.]', label: '[Name: person 3]', src: m(P + 'Kylepogi.jpeg'), alt: 'Team member 3' },
+    { name: '[Full name]', role: '[Role]', desc: '[Description and experience.]', label: '[Name: person 4]', src: m(P + 'merylle.JPG'), alt: 'Team member 4' }
+  ];
+
+  var hero = [
+    { type: 'img', label: '[Caption: BTS 1]', alt: 'Behind the scenes photo 1', src: m(B + '862339267_1101851162749568_7420244380046879628_n.jpg') },
+    { type: 'img', label: '[Caption: BTS 2]', alt: 'Behind the scenes photo 2', src: m(B + '862540481_3150352815296688_3817037715819690971_n.jpg') },
+    { type: 'img', label: '[Caption: BTS 3]', alt: 'Behind the scenes photo 3', src: m(B + '866429284_1697003601815241_9022340868257457095_n.jpg') },
+    { type: 'video', label: '[Caption: BTS video]', alt: 'Behind the scenes video', src: m(B + 'AQPcUij0DwIEWXOJzkTgcDrreag3BGAuFbX9SQMK2THiM6EDi6rCBWJgQjo36tKg-nDl5NJtZ8JYBjB0-rQFZXSJted0KP1XBeFxZJZHmQ.mp4') }
+  ];
+
+  var reels = [
+    { type: 'video', label: '[Video 1]', stat: '[Result, e.g. 120K views]', src: m(R + 'Chelay_sCribs_1st Ad.mp4') },
+    { type: 'video', label: '[Video 2]', stat: '[Result]', src: m(R + 'Chelay_s Cribs_2nd content.mp4') },
+    { type: 'video', label: '[Video 3]', stat: '[Result]', src: m(R + 'Chelay_sCribs_3rdcontent.mp4') },
+    { type: 'video', label: '[Video 4]', stat: '[Result]', src: m(R + 'Handheld_CustomShoe.mp4') },
+    { type: 'video', label: '[Video 5]', stat: '[Result]', src: m(R + 'Handheld_horsebitloaferGold.mp4') },
+    { type: 'video', label: '[Video 7]', stat: '[Result]', src: m(R + 'MCA_ad2.mp4') }
+  ];
+
+  var teamCards = team.map(function (t) { return { type: 'img', label: t.label, alt: t.alt, src: t.src }; });
+
+  var steps = [
+    { title: 'Brand and Content Consultation', body: 'We learn what you sell, who buys it, and what has or hasn’t worked so far.' },
+    { title: 'Research', body: 'We study your competitors and trends, then write the hooks and shot list for you to approve.' },
+    { title: 'Onsite Shoot', body: 'We come to you with the gear and direction. You just show up.' },
+    { title: 'Post Production (editing)', body: 'Reels and graphics, captioned and ready to post.' }
+  ];
+
+  var tiers = [
+    { name: 'Starter', price: '₱15K', items: ['1 shoot', '8 reels + 4 graphics'], extras: 'Hooks and captions written for you', goodFor: '(Good for testing what video can do for your brand)', boxBg: '#F4F4F4', boxFg: '#111111', popular: false },
+    { name: 'Growth', price: '₱25K', items: ['1 full-day shoot', '14 reels + 8 graphics'], extras: 'Hooks, scripts and captions, a monthly content calendar, and a monthly results recap', goodFor: '(Good for posting consistently and turning views into sales)', boxBg: '#111111', boxFg: '#FFFFFF', popular: true },
+    { name: 'Full Studio', price: '₱40K', items: ['3 shoots', '25 reels + 10 graphics'], extras: 'Everything in Growth, plus a brand and offer positioning session, priority editing and a monthly strategy call', goodFor: '(Good for launches, rebrands and going all-in on sales and virality)', boxBg: '#F4F4F4', boxFg: '#111111', popular: false }
+  ];
+
+  /* ---------- STATIC MEDIA ---------- */
+  document.getElementById('memeImg').src = m('./media/meme.png');
+  document.getElementById('featuredVideo').src = m('./media/one video/Chelay_sCrib_3rdcontent(2).mp4');
+
+  /* ---------- STEPS ---------- */
+  var stepsEl = document.getElementById('steps');
+  steps.forEach(function (s) {
+    var li = document.createElement('li');
+    li.style.cssText = 'background: #F4F4F4; border: 1px solid #E2E2E2; border-radius: 6px; padding: 20px; display: flex; flex-direction: column; gap: 10px';
+    var h = document.createElement('h3');
+    h.style.cssText = 'margin: 0; font-weight: 900; font-size: 21px; line-height: 1.25';
+    h.textContent = s.title;
+    var p = document.createElement('p');
+    p.style.cssText = 'margin: 0; font-size: 16px; line-height: 1.45; color: #444444';
+    p.textContent = s.body;
+    li.appendChild(h); li.appendChild(p);
+    stepsEl.appendChild(li);
+  });
+
+  /* ---------- PRICING ---------- */
+  var tiersEl = document.getElementById('tiers');
+  tiers.forEach(function (t) {
+    var col = document.createElement('div');
+    col.style.cssText = 'display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px';
+    var box = document.createElement('div');
+    box.style.cssText = 'position: relative; width: 100%; max-width: 260px; background: ' + t.boxBg + '; color: ' + t.boxFg + '; border: 1px solid #DADADA; border-radius: 6px; padding: 18px 16px; box-sizing: border-box; text-align: left';
+    if (t.popular) {
+      var badge = document.createElement('span');
+      badge.style.cssText = 'position: absolute; top: -13px; right: 12px; background: #FFFFFF; color: #111111; border: 1px solid #111111; font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 999px';
+      badge.textContent = 'Most popular';
+      box.appendChild(badge);
+    }
+    var nm = document.createElement('span');
+    nm.style.cssText = 'font-weight: 900; font-size: 26px';
+    nm.textContent = t.name;
+    box.appendChild(nm);
+    var price = document.createElement('p');
+    price.style.cssText = 'margin: 0; font-weight: 900; font-size: 30px';
+    price.appendChild(document.createTextNode(t.price + ' '));
+    var per = document.createElement('span');
+    per.style.cssText = 'font-weight: 600; font-size: 16px; color: #666666';
+    per.textContent = '/ month';
+    price.appendChild(per);
+    var items = document.createElement('div');
+    items.style.cssText = 'display: flex; flex-direction: column; gap: 4px; font-weight: 800; font-size: 19px; line-height: 1.35';
+    t.items.forEach(function (it) { var s = document.createElement('span'); s.textContent = it; items.appendChild(s); });
+    var ex = document.createElement('p');
+    ex.style.cssText = 'margin: 0; font-size: 16px; line-height: 1.45; color: #444444; max-width: 260px';
+    ex.textContent = t.extras;
+    var gf = document.createElement('p');
+    gf.style.cssText = 'margin: 0; font-weight: 800; font-size: 16px; line-height: 1.4; max-width: 260px';
+    gf.textContent = t.goodFor;
+    [box, price, items, ex, gf].forEach(function (n) { col.appendChild(n); });
+    tiersEl.appendChild(col);
+  });
+
+  /* ---------- STACKS ---------- */
+  // cfg: { w, h, left, top, items, slots, showStat }
+  function makeStack(containerId, cfg) {
+    var container = document.getElementById(containerId);
+    var els = cfg.items.map(function (it) {
+      var card = document.createElement('div');
+      card.className = 'card';
+      card.style.left = cfg.left + 'px';
+      card.style.top = cfg.top + 'px';
+      card.style.width = cfg.w + 'px';
+      card.style.height = cfg.h + 'px';
+
+      var frame = document.createElement('div');
+      frame.className = 'frame';
+      var media;
+      if (it.type === 'video') {
+        media = document.createElement('video');
+        media.controls = true;
+        media.setAttribute('playsinline', '');
+        media.preload = 'metadata';
+      } else {
+        media = document.createElement('img');
+        media.alt = it.alt || '';
+        media.loading = 'lazy';
+      }
+      media.src = it.src;
+      frame.appendChild(media);
+      card.appendChild(frame);
+
+      var label = document.createElement('span');
+      label.textContent = it.label;
+      card.appendChild(label);
+
+      if (cfg.showStat) {
+        var stat = document.createElement('span');
+        stat.style.cssText = 'font-weight: 800; font-size: 20px; color: #111111';
+        stat.textContent = it.stat;
+        card.appendChild(stat);
+      }
+      container.appendChild(card);
+      return card;
+    });
+
+    return {
+      render: function (tick, leaving) {
+        var n = els.length, f = tick % n;
+        els.forEach(function (card, i) {
+          var slot = (i - f + n) % n;
+          var hidden = slot >= cfg.slots.length;
+          var t = cfg.slots[Math.min(slot, cfg.slots.length - 1)];
+          var o = hidden ? 0 : 1;
+          var pe = hidden ? 'none' : 'auto';
+          if (slot === 0 && leaving) { t = t + ' translateY(-90px) scale(1.04)'; o = 0; pe = 'none'; }
+          card.style.transform = t;
+          card.style.opacity = o;
+          card.style.pointerEvents = pe;
+          card.style.zIndex = n - slot;
+          card.style.background = slot === 0 ? '#EFEFEF' : '#F6F6F6';
+        });
+      }
+    };
+  }
+
+  var stacks = [
+    makeStack('heroStack', {
+      w: 280, h: 380, left: 40, top: 40, items: hero,
+      slots: ['translate(160px,-40px) rotate(5deg)', 'translate(105px,-10px) rotate(1deg)', 'translate(50px,20px) rotate(-4deg)', 'translate(-20px,50px) rotate(-12deg)']
+    }),
+    makeStack('videoStack', {
+      w: 290, h: 390, left: 20, top: 60, items: reels, showStat: true,
+      slots: ['translate(150px,-20px) rotate(12deg)', 'translate(100px,0px) rotate(7deg)', 'translate(50px,15px) rotate(2deg)', 'translate(0px,30px) rotate(-3deg)']
+    }),
+    makeStack('teamStack', {
+      w: 270, h: 340, left: 30, top: 40, items: teamCards,
+      slots: ['translate(130px,-10px) rotate(10deg)', 'translate(85px,5px) rotate(5deg)', 'translate(40px,22px) rotate(1deg)', 'translate(0px,40px) rotate(-4deg)']
+    })
+  ];
+
+  var tick = 0, leaving = false;
+
+  function render() {
+    stacks.forEach(function (s) { s.render(tick, leaving); });
+    var mem = team[tick % team.length];
+    document.getElementById('memberName').textContent = mem.name;
+    document.getElementById('memberRole').textContent = '(' + mem.role + ')';
+    document.getElementById('memberDesc').textContent = mem.desc;
+  }
+  render();
+
+  /* ---------- ROTATION ---------- */
+  var reduce = false;
+  try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+  if (reduce) return;
+
+  setInterval(function () {
+    // Don't rotate while a visitor is watching a video
+    var vids = document.querySelectorAll('video');
+    for (var i = 0; i < vids.length; i++) {
+      if (!vids[i].paused && !vids[i].ended) return;
+    }
+    leaving = true;
+    render();
+    setTimeout(function () {
+      tick++;
+      leaving = false;
+      render();
+    }, 450);
+  }, 2800);
+})();
+</script>
+</body>
+</html>
